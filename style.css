@@ -30,7 +30,7 @@ button {
 	transition-duration: .2s;
 	transition-property: background-color, border-color, color;
 	line-height: 1.1;
-	white-space: nowrap
+	white-space: nowrap;
 }
 
 button:hover:not(:disabled) {
@@ -52,7 +52,7 @@ body > header {
 	margin-bottom: 1em;
 	background: var(--accent-color);
 	color: white;
-	text-align: center
+	text-align: center;
 }
 
 body > header > a {
@@ -67,7 +67,7 @@ body > header h1 {
 		font-size: 400%;
 		line-height: 1;
 		margin-bottom: .2em;
-		white-space: nowrap
+		white-space: nowrap;
 	}
 
 body > header h1 .app-icon {
@@ -88,7 +88,7 @@ body > header h2 {
 @media (max-width: 450px) {
 
 body > header {
-		display: none
+		display: none;
 }
 	}
 
@@ -111,13 +111,13 @@ section[mv-list="entry"] {
 
 article.entry {
 	background: hsl(var(--gray) 90%);
-	border-radius: 4px
+	border-radius: 4px;
 }
 
 article.entry > * {
 		display: flex;
 		gap: .4em;
-		flex-wrap: wrap
+		flex-wrap: wrap;
 	}
 
 article.entry > *:not(:empty) {
@@ -180,11 +180,11 @@ meta[property][mv-mode="edit"] {
 .field-row {
 	display: flex;
 	gap: .4em;
-	align-items: center
+	align-items: center;
 }
 
 main > .field-row {
-		justify-content: center
+		justify-content: center;
 }
 
 .chart-row {
@@ -202,7 +202,7 @@ figure.chart {
 	flex-flow: column;
 	margin: 0;
 	padding: 1em;
-	border: 1px solid hsl(var(--gray) 50% / .5)
+	border: 1px solid hsl(var(--gray) 50% / .5);
 }
 
 figure.chart > table {
@@ -217,7 +217,7 @@ figure.chart > figcaption {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: .5em;
-	margin: 1em 0
+	margin: 1em 0;
 }
 
 .charts > :only-child {
