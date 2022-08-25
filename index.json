@@ -11,5 +11,18 @@
 		"storage": "",
 		"notes": true,
 		"entries_name": "entries"
+	},
+	"mood": {
+		"name": "Mood",
+		"slug": "mood",
+		"entry_name": "entry",
+		"description": "",
+		"private": false,
+		"icon": "😀",
+		"color": "#0cc4e9",
+		"storageType": "",
+		"storage": "",
+		"notes": true,
+		"entries_name": "entries"
 	}
 }
