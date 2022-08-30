@@ -17,7 +17,7 @@
 		"slug": "mood",
 		"entry_name": "entry",
 		"description": "entry tracker",
-		"private": true,
+		"private": false,
 		"icon": "😀",
 		"color": "#0cc4e9",
 		"storageType": "",
