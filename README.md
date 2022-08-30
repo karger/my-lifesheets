@@ -1,4 +1,4 @@
 # My lifesheets
 
 - [😢 Foot Pain](foot-pain): entry tracker
-- [😀 Mood](mood): 
+- [😀 Mood](mood): entry tracker
