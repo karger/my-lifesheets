@@ -23,20 +23,28 @@
 			<span class="app-icon">😀</span>
 			<span class="app-name">Mood</span>
 		</h1>
-		<h2></h2>
+		<h2>entry tracker</h2>
 		<div class="mv-bar mv-ui"></div>
 	</header>
 
-	<main>
-		
-		<div class="field-row">
+	<main class="charts-first">
+		<a id=stats></a>
+			
+		<a id=entries></a>
+			<div class="field-row">
 				<button data-type="action" mv-action="add(entry)" class="appearance-stretch">Add entry</button>
+				<span data-type="expression" data-prefix="😀" mv-value="count(happy)"></span>
+				<span data-type="expression" data-prefix="😐" mv-value="count(neutral)"></span>
+				<span data-type="expression" data-prefix="🙂" mv-value="count(ok)"></span>
+				<span data-type="expression" data-prefix="😔" mv-value="count(sad)"></span>
+				<span data-type="expression" data-prefix="😟" mv-value="count(worried)"></span>
+				<span data-type="expression" data-prefix="😠" mv-value="count(angry)"></span>
 			</div>
 		<section mv-list="entry">
 			<article mv-list-item class="entry">
 				<header class="field-row">
 					<span property="weekday" data-type="expression" mv-value="weekday(date, 'shortname')"></span>
-					<time property="date" data-type="property" mv-default="[$today]" mv-edit-type="inline" mv-editor-type="date" class="type-date"></time>
+					<time property="date" data-type="property" mv-default="[$today]" mv-edit-type="inline" mv-editor-type="date" class="bold type-date"></time>
 					<span property="happy" data-type="property" class="type-toggle mv-toggle">😀</span>
 					<span property="neutral" data-type="property" class="type-toggle mv-toggle">😐</span>
 					<span property="ok" data-type="property" class="type-toggle mv-toggle">🙂</span>
