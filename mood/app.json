@@ -3,7 +3,7 @@
 		"name": "Mood",
 		"slug": "mood",
 		"entry_name": "entry",
-		"description": "",
+		"description": "entry tracker",
 		"private": false,
 		"icon": "😀",
 		"color": "#0cc4e9",
@@ -37,7 +37,10 @@
 			],
 			"settings": {
 				"type": "date",
-				"default": "[$today]"
+				"default": "[$today]",
+				"formatting": [
+					"b"
+				]
 			},
 			"name": "date"
 		},
@@ -117,6 +120,54 @@
 				"target_preset": "new",
 				"appearance": "stretch",
 				"set_pairs": []
+			}
+		},
+		{
+			"type": "expression",
+			"scope": "root",
+			"settings": {
+				"expression": "count(happy)",
+				"prefix": "😀"
+			}
+		},
+		{
+			"type": "expression",
+			"scope": "root",
+			"settings": {
+				"expression": "count(neutral)",
+				"prefix": "😐"
+			}
+		},
+		{
+			"type": "expression",
+			"scope": "root",
+			"settings": {
+				"prefix": "🙂",
+				"expression": "count(ok)"
+			}
+		},
+		{
+			"type": "expression",
+			"scope": "root",
+			"settings": {
+				"prefix": "😔",
+				"expression": "count(sad)"
+			}
+		},
+		{
+			"type": "expression",
+			"scope": "root",
+			"settings": {
+				"expression": "count(worried)",
+				"prefix": "😟"
+			}
+		},
+		{
+			"type": "expression",
+			"scope": "root",
+			"settings": {
+				"prefix": "😠",
+				"expression": "count(angry)"
 			}
 		}
 	],
