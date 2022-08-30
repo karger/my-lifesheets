@@ -64,7 +64,7 @@
 			"settings": {
 				"prefix": "end:",
 				"type": "time",
-				"default": "[08:00]"
+				"default": "08:00"
 			},
 			"name": "end"
 		},
