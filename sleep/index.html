@@ -43,7 +43,7 @@
 					<span property="weekday" data-type="expression" mv-value="weekday(date, 'shortname')"></span>
 					<time property="date" data-type="property" mv-default="[$today]" mv-edit-type="inline" mv-editor-type="date" class="bold type-date"></time>
 					<time property="time" data-type="property" data-prefix=" at " mv-default="[time($startup, 'hours')]" mv-edit-type="inline" mv-editor-type="time" class="type-time"></time>
-					<time property="end" data-type="property" data-prefix="end:" mv-default="[08:00]" mv-edit-type="inline" mv-editor-type="time" class="type-time"></time>
+					<time property="end" data-type="property" data-prefix="end:" mv-default="08:00" mv-edit-type="inline" mv-editor-type="time" class="type-time"></time>
 					<span property="date_time" data-type="expression" data-show="false" mv-value="date & if(time, 'T' & time)"></span>
 					<span property="quality" data-type="expression" mv-value="if(duration>5*hours(),'good', 'bad')"></span>
 				</header>
